@@ -1,0 +1,418 @@
+/* global */
+@font-face {
+    font-family: myFont;
+    src: url(../Montserrat-VariableFont_wght.ttf);
+}
+
+:root {
+    --sections-color-1: #F7F7F7;
+    --main-color: black;
+    --carosal-buttons:#869791;
+}
+
+* {
+    font-family: myFont;
+}
+
+img {
+    width: 100%;
+}
+
+/* global end*/
+
+
+/* nav start*/
+.navbar-expand-lg .navbar-nav .nav-link {
+    position: relative;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item .nav-link:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 6px;
+    left: 6px;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.5s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-item .active:before {
+    width: 80%;
+}
+
+/* nav end */
+
+
+/* home start */
+.home {
+    background-image: url(../imgs/bg.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.bg-layer {
+    background-color: rgb(0, 0, 0, 0.6)
+}
+
+.home h1:after {
+    content: 'larry danials';
+    animation: typing 10s infinite;
+    font-weight: 400;
+}
+
+@keyframes typing {
+    2.5% {
+        content: 'larry danials|';
+    }
+
+    2.5% {
+        content: 'larry danial|';
+    }
+
+    5% {
+        content: 'larry dania|';
+    }
+
+    7.5% {
+        content: 'larry dani|';
+    }
+
+    7.% {
+        content: 'larry dan|';
+    }
+
+    10% {
+        content: 'larry da|';
+    }
+
+    12.5% {
+        content: 'larry d|';
+    }
+
+    15% {
+        content: 'larry|';
+    }
+
+    17.5% {
+        content: 'larr|';
+    }
+
+    20% {
+        content: 'lar|';
+    }
+
+    22.5% {
+        content: 'la|';
+    }
+
+    25% {
+        content: 'l|';
+    }
+
+    27.5% {
+        content: '|';
+    }
+
+    30% {
+        content: 'D|';
+    }
+
+    32.5% {
+        content: 'De|';
+    }
+
+    35% {
+        content: 'Dev|';
+    }
+
+    37.5% {
+        content: 'Deve|';
+    }
+
+    40% {
+        content: 'Devel|';
+    }
+
+    42.5% {
+        content: 'Develo|';
+    }
+
+    45% {
+        content: 'Develob|';
+    }
+
+    47.5% {
+        content: 'Develobe|';
+    }
+
+    50% {
+        content: 'Develober|';
+    }
+
+    55% {
+        content: 'Develobe|';
+    }
+
+    60% {
+        content: 'Develob|';
+    }
+
+    65% {
+        content: 'Develo|';
+    }
+
+    70% {
+        content: 'Devel|';
+    }
+
+    75% {
+        content: 'Deve|';
+    }
+
+    80% {
+        content: 'Deve|';
+    }
+
+    85% {
+        content: 'Dev|';
+    }
+
+    90% {
+        content: 'De|';
+    }
+
+    100% {
+        content: 'Designer|';
+    }
+
+}
+
+.social-icons {
+    font-size: 14px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    color: white;
+}
+
+/* home end */
+
+
+/* about */
+
+.about .img-container img:after {
+    content: '';
+    width: 80% !important;
+    height: 80% !important;
+    position: absolute !important;
+    left: 0px !important;
+    bottom: -30px !important;
+    background-image: url(../img/dots.png) !important;
+    background-repeat: repeat !important;
+    z-index: 2 !important;
+    /* fe mo4kela hena ?????????????????? */
+}
+
+.buttons .btn1 {
+    transition: all 0.5s;
+
+}
+
+.buttons .btn2 {
+    transition: all 0.5s;
+
+}
+
+.buttons .btn1:hover {
+    background-color: white !important;
+    color: black !important;
+}
+
+.buttons .btn2:hover {
+    background-color: black !important;
+    color: white !important;
+}
+
+/* about end */
+
+/* services */
+
+.services {
+    background-color: var(--sections-color-1);
+}
+
+.heading {
+    width: fit-content;
+    background-image: url(../imgs/dots.png);
+}
+
+.services .service i {
+    background-color: var(--sections-color-1);
+    padding: 15px 20px;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.services .service:hover i {
+    background-color: black;
+    color: white;
+}
+
+/* services end */
+
+/* works */
+#Works .nav-pills .nav-link {
+    color: black;
+    position: relative;
+}
+
+#Works .nav-pills .nav-link:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 6px;
+    left: 10px;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.5s;
+}
+
+#Works .nav-pills .nav-link.active:before {
+    width: 80%;
+}
+
+#Works .nav-pills .nav-link.active {
+    background-color: transparent;
+}
+
+
+
+#Works .img-works .layer {
+    top: 15px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#Works .img-works:hover .layer {
+    opacity: 1;
+    top: 0px;
+}
+#Works .img-works .layer ul li:hover i{
+    color: black !important;
+    background-color: white !important;
+}
+/* works end */
+
+/* clients */
+
+#Clients{
+    background-color: var(--sections-color-1);
+}
+.clients .img-clients img {
+    width: 100%;
+}
+#Clients .img-clients{
+    width: 9%;
+}
+
+.carousel-indicators .active{
+background-color: var(--carosal-buttons);
+}
+
+#Clients .carousel-indicators [data-bs-target]{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: gray;
+}
+/* clients end*/
+
+/* team */
+#Team{
+    background-color: var(--sections-color-1);
+}
+#Team .team-words{
+    background-color:#5B5B5B ;
+}
+
+#Team .team-socials {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s;
+    transform: rotatey(180deg) !important;
+}
+#Team .team-socials i {
+    background-color: black;
+    color: white;
+    padding: 10px 11px;
+    border-radius: 50%;
+    border: black solid 1px !important;
+}
+#Team .team-socials i:hover{
+    color: black;
+    background-color: white;
+}
+
+#Team .team-container:hover .team-socials {
+    opacity: 1;
+    margin: 3px !important;
+    transform: rotatey(360deg) !important;
+}
+/* team end*/
+
+/* contact */
+
+#Contact .contact-socials i {
+    background-color: var(--sections-color-1);
+    padding: 15px 20px;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+#Contact .contact-socials:hover i {
+    background-color: black;
+    color: white;
+}
+
+
+input{
+    background-color: var(--sections-color-1);
+}
+textarea{
+    background-color: var(--sections-color-1);
+    
+}
+
+.contact-btn{
+    background-color: black;
+    color: white;
+    transition: 0.5s all;
+}
+
+.contact-btn:hover{
+    background-color: white;
+    color: black;
+}
+/* contact end */
+
+/* rights */
+#Rights{
+    background-color: #1C1C1C;
+    color: #6F7C67;
+}
+/* rights end */
